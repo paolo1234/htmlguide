@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marquee</title>
+    <style>
+        .testo{
+            padding: 2px;
+            font-family:Georgia, 'Times New Roman', Times, serif
+        }
+        .attributo{
+            padding: 5px;
+            margin-bottom: 10px;
+            background: #ddddf5;
+        }
+        #tornasu{
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            padding:20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border: 1px solid black;  
+            color: white;
+            background: #337fe2;
+            }
+        #tornasu:hover{
+        
+            background: #006eff;
+        }
+    </style>
+</head>
+<body id="inizio">
+    <div class="container">
+        <h1 class="titolo"> Il tag Marquee e delle sue caratteristiche </h1>
+        <h2 class="sottotitolo"> Che cos'è e a cosa serve</h2>
+        <p class="testo"> Il tag <strong>Marquee</strong> deve essere posizionato all'interno della sezione <em>body</em> del documento HTML5.</p>
+        <p class="testo"> Il tag si presenta in questo modo: <code>&lt;marquee&gt; Testo &lt;/marquee&gt; </code> e permette di mostrare testo in scorrimento.</p>
+        <p class="testo"> Ecco un esempio: </p>
+        <span class="code"> <marquee> Testo di esempio </marquee></span>
+        <h2 class="sottotitolo">Gli attribbuti del tag Marquee</h2>
+        <p class="testo">Il tag marquee può avere degli attributi per modificarne le caratteristiche, ad esempio:</p>
+        <table>
+            <thead>
+                <tr> <th>Attributo</th> <th>Descrizione</th> <th>Esempio</th></tr>
+            </thead>
+            <tbody>
+                <tr> <td>width</td> <td>Serve a definire la larghezza del contenitore del testo</td><td><a href="#width">Esempio</a></td></tr>
+                <tr> <td>height</td> <td>Serve a definire l'altezza del contenitore del testo</td><td><a href="#height">Esempio</a></td></tr>
+                <tr> <td>direction</td> <td>Serve a definire la direzione del testo</td><td><a href="#direction">Esempio</a></td></tr>
+                <tr> <td>scrolldelay</td> <td>Serve a definire il tempo di ritardo del testo</td><td><a href="#scrolldelay">Esempio</a></td></tr>
+                <tr> <td>scrollamount</td> <td>Serve a definire la velocità del testo</td><td><a href="#scrollamount">Esempio</a></td></tr>
+                <tr> <td>behavior</td> <td>Serve a definire il tipo di scorrimento del testo</td><td><a href="#behavior">Esempio</a></td></tr>
+                <tr> <td>loop</td> <td>Serve a definire quante volte si ripete il testo</td><td><a href="#loop">Esempio</a></td></tr>
+                <tr> <td>bgcolor</td> <td>Serve a definire il colore di sfondo</td><td><a href="#bgcolor">Esempio</a></td></tr>
+                <tr> <td>vspace</td> <td>Serve a definire lo spazio verticale</td><td><a href="#vspace">Esempio</a></td></tr>
+                <tr> <td>hspace</td> <td>Serve a definire lo spazio orizzontale</td><td><a href="#hspace">Esempio</a></td></tr>
+            </tbody>
+        </table>
+        
+        
+        <h2 class="sottotitolo">Esempi</h2>
+        
+        <div class="attributo">
+            <h3 class="titoloesempio"> Width </h3>
+            <p class="testo" id="width"> Definisce la larghezza del contenitore del testo, può contenere valori numerici o in percentuale.</p>
+            <p class="testo"><code> &lt;marquee width="50" &gt; Larghezza di marquee con pixel &lt;/marquee&gt;</code></p>
+            <p class="testo"> Ad esempio nel codice riportato sopra la larghezza del contenitore sarà di 50 pixel</p>
+            <div class="code"><marquee width="50"> Larghezza di marquee con pixel</marquee></div>
+            <p class="testo"><code> &lt;marquee width="45%" &gt; Larghezza di marquee con percentuale &lt;/marquee&gt;</code></p>
+            <p class="testo"> Ad esempio nel codice riportato sopra la larghezza del contenitore sarà del 45% della pagina, o del contenitore in cui è inserito</p>
+            <div class="code"><marquee width="45%"> Larghezza di marquee con percentuale</marquee></div>
+        </div>
+        
+        <div class="attributo">
+            <h3 class="titoloesempio"> Height </h3>
+            <p class="testo" id="height"> Definisce l'altezza del contenitore del testo, può contenere valori numerici o in percentuale.</p>
+            <p class="testo"><code> &lt;marquee width="50" &gt; Larghezza di marquee con pixel &lt;/marquee&gt;</code></p>
+            <p class="testo"> Ad esempio nel codice riportato sopra la larghezza del contenitore sarà di 50 pixel</p>
+            <div class="code"><marquee width="50"> Larghezza di marquee con pixel</marquee></div>
+            <p class="testo"><code> &lt;marquee width="45%" &gt; Larghezza di marquee con percentuale &lt;/marquee&gt;</code></p>
+            <p class="testo"> Ad esempio nel codice riportato sopra la larghezza del contenitore sarà del 45% della pagina, o del contenitore in cui è inserito</p>
+            <div class="code"><marquee width="45%"> Larghezza di marquee con percentuale</marquee></div>
+        </div>
+        
+        <div class="attributo">
+            <h3 class="titoloesempio"> Direction </h3>
+            <p class="testo" id="direction"> Definisce la larghezza del contenitore del testo, può contenere valori numerici o in percentuale.</p>
+            <p class="testo"><code> &lt;marquee width="50" &gt; Larghezza di marquee con pixel &lt;/marquee&gt;</code></p>
+            <p class="testo"> Ad esempio nel codice riportato sopra la larghezza del contenitore sarà di 50 pixel</p>
+            <div class="code"><marquee width="50"> Larghezza di marquee con pixel</marquee></div>
+            <p class="testo"><code> &lt;marquee width="45%" &gt; Larghezza di marquee con percentuale &lt;/marquee&gt;</code></p>
+            <p class="testo"> Ad esempio nel codice riportato sopra la larghezza del contenitore sarà del 45% della pagina, o del contenitore in cui è inserito</p>
+            <div class="code"><marquee width="45%"> Larghezza di marquee con percentuale</marquee></div>
+        </div>
+        
+        <div class="attributo">
+            <h3 class="titoloesempio"> Scrolldelay </h3>
+            <p class="testo" id="scrolldelay"> Definisce la larghezza del contenitore del testo, può contenere valori numerici o in percentuale.</p>
+            <p class="testo"><code> &lt;marquee width="50" &gt; Larghezza di marquee con pixel &lt;/marquee&gt;</code></p>
+            <p class="testo"> Ad esempio nel codice riportato sopra la larghezza del contenitore sarà di 50 pixel</p>
+            <div class="code"><marquee width="50"> Larghezza di marquee con pixel</marquee></div>
+            <p class="testo"><code> &lt;marquee width="45%" &gt; Larghezza di marquee con percentuale &lt;/marquee&gt;</code></p>
+            <p class="testo"> Ad esempio nel codice riportato sopra la larghezza del contenitore sarà del 45% della pagina, o del contenitore in cui è inserito</p>
+            <div class="code"><marquee width="45%"> Larghezza di marquee con percentuale</marquee></div>
+        </div>
+        
+        <div class="attributo">
+            <h3 class="titoloesempio"> Scrollamount </h3>
+            <p class="testo" id="scrollamount"> Definisce la larghezza del contenitore del testo, può contenere valori numerici o in percentuale.</p>
+            <p class="testo"><code> &lt;marquee width="50" &gt; Larghezza di marquee con pixel &lt;/marquee&gt;</code></p>
+            <p class="testo"> Ad esempio nel codice riportato sopra la larghezza del contenitore sarà di 50 pixel</p>
+            <div class="code"><marquee width="50"> Larghezza di marquee con pixel</marquee></div>
+            <p class="testo"><code> &lt;marquee width="45%" &gt; Larghezza di marquee con percentuale &lt;/marquee&gt;</code></p>
+            <p class="testo"> Ad esempio nel codice riportato sopra la larghezza del contenitore sarà del 45% della pagina, o del contenitore in cui è inserito</p>
+            <div class="code"><marquee width="45%"> Larghezza di marquee con percentuale</marquee></div>
+        </div>
+        
+        <div class="attributo">
+            <h3 class="titoloesempio"> Behavior </h3>
+            <p class="testo" id="behavior"> Definisce la larghezza del contenitore del testo, può contenere valori numerici o in percentuale.</p>
+            <p class="testo"><code> &lt;marquee width="50" &gt; Larghezza di marquee con pixel &lt;/marquee&gt;</code></p>
+            <p class="testo"> Ad esempio nel codice riportato sopra la larghezza del contenitore sarà di 50 pixel</p>
+            <div class="code"><marquee width="50"> Larghezza di marquee con pixel</marquee></div>
+            <p class="testo"><code> &lt;marquee width="45%" &gt; Larghezza di marquee con percentuale &lt;/marquee&gt;</code></p>
+            <p class="testo"> Ad esempio nel codice riportato sopra la larghezza del contenitore sarà del 45% della pagina, o del contenitore in cui è inserito</p>
+            <div class="code"><marquee width="45%"> Larghezza di marquee con percentuale</marquee></div>
+        </div>
+        
+        <div class="attributo">
+            <h3 class="titoloesempio"> Loop </h3>
+            <p class="testo" id="loop"> Definisce la larghezza del contenitore del testo, può contenere valori numerici o in percentuale.</p>
+            <p class="testo"><code> &lt;marquee width="50" &gt; Larghezza di marquee con pixel &lt;/marquee&gt;</code></p>
+            <p class="testo"> Ad esempio nel codice riportato sopra la larghezza del contenitore sarà di 50 pixel</p>
+            <div class="code"><marquee width="50"> Larghezza di marquee con pixel</marquee></div>
+            <p class="testo"><code> &lt;marquee width="45%" &gt; Larghezza di marquee con percentuale &lt;/marquee&gt;</code></p>
+            <p class="testo"> Ad esempio nel codice riportato sopra la larghezza del contenitore sarà del 45% della pagina, o del contenitore in cui è inserito</p>
+            <div class="code"><marquee width="45%"> Larghezza di marquee con percentuale</marquee></div>
+        </div>
+        
+        <div class="attributo">
+            <h3 class="titoloesempio"> Bgcolor </h3>
+            <p class="testo" id="bgcolor"> Definisce la larghezza del contenitore del testo, può contenere valori numerici o in percentuale.</p>
+            <p class="testo"><code> &lt;marquee width="50" &gt; Larghezza di marquee con pixel &lt;/marquee&gt;</code></p>
+            <p class="testo"> Ad esempio nel codice riportato sopra la larghezza del contenitore sarà di 50 pixel</p>
+            <div class="code"><marquee width="50"> Larghezza di marquee con pixel</marquee></div>
+            <p class="testo"><code> &lt;marquee width="45%" &gt; Larghezza di marquee con percentuale &lt;/marquee&gt;</code></p>
+            <p class="testo"> Ad esempio nel codice riportato sopra la larghezza del contenitore sarà del 45% della pagina, o del contenitore in cui è inserito</p>
+            <div class="code"><marquee width="45%"> Larghezza di marquee con percentuale</marquee></div>
+        </div>
+        
+        <div class="attributo">
+            <h3 class="titoloesempio"> Vspace </h3>
+            <p class="testo" id="vspace"> Definisce la larghezza del contenitore del testo, può contenere valori numerici o in percentuale.</p>
+            <p class="testo"><code> &lt;marquee width="50" &gt; Larghezza di marquee con pixel &lt;/marquee&gt;</code></p>
+            <p class="testo"> Ad esempio nel codice riportato sopra la larghezza del contenitore sarà di 50 pixel</p>
+            <div class="code"><marquee width="50"> Larghezza di marquee con pixel</marquee></div>
+            <p class="testo"><code> &lt;marquee width="45%" &gt; Larghezza di marquee con percentuale &lt;/marquee&gt;</code></p>
+            <p class="testo"> Ad esempio nel codice riportato sopra la larghezza del contenitore sarà del 45% della pagina, o del contenitore in cui è inserito</p>
+            <div class="code"><marquee width="45%"> Larghezza di marquee con percentuale</marquee></div>
+        </div>
+        
+        <div class="attributo">
+            <h3 class="titoloesempio"> Hspace </h3>
+            <p class="testo" id="hspace"> Definisce la larghezza del contenitore del testo, può contenere valori numerici o in percentuale.</p>
+            <p class="testo"><code> &lt;marquee width="50" &gt; Larghezza di marquee con pixel &lt;/marquee&gt;</code></p>
+            <p class="testo"> Ad esempio nel codice riportato sopra la larghezza del contenitore sarà di 50 pixel</p>
+            <div class="code"><marquee width="50"> Larghezza di marquee con pixel</marquee></div>
+            <p class="testo"><code> &lt;marquee width="45%" &gt; Larghezza di marquee con percentuale &lt;/marquee&gt;</code></p>
+            <p class="testo"> Ad esempio nel codice riportato sopra la larghezza del contenitore sarà del 45% della pagina, o del contenitore in cui è inserito</p>
+            <div class="code"><marquee width="45%"> Larghezza di marquee con percentuale</marquee></div>
+        </div>
+
+        <a href="#inizio" id="tornasu"> Torna su</a>
+    </div>
+</body>
+</html>
